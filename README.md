@@ -12,3 +12,4 @@ brightdata.json :
 
 ```user-id``` : your brightdata account ID (for me this is hl_xxxxxx)
 
+Cost calculation only works for data_center, sorry (For now)
