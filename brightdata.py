@@ -20,7 +20,7 @@ api = "https://brightdata.com/api/zone/bw?zone=" + loadConfig()["api-zone"]
 
 colorama.init()
 r = requests.get(api, headers=headers, timeout=10).text
-mbusage = (0.000001 * json.loads(r)[loadConfig()['user-id']]["sums"][loadConfig()['api_zone']]["back_m0"]["bw_sum"])
+mbusage = (0.000001 * json.loads(r)[loadConfig()['user-id']]["sums"][loadConfig()['api-zone']]["back_m0"]["bw_sum"])
 date = str(json.loads(r)[loadConfig()['user-id']]["last_update_ts"])
 valdate = str(json.loads(r)[loadConfig()['user-id']]["last_value_ts"])
 gb = mbusage / 1000
